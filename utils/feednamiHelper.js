@@ -26,33 +26,23 @@ function showChannel(url) {
 
                     }
                     resolve(feeds)
-                    //console.log('!feed');
-                    //return feeds[0].title;
+              
                 })
             }
-    ) //Promise
+    ) 
 
 }
-
-var cast = Promise.resolve(showChannel);
 
 var helper = {
     getFeeds : function(url){
             return showChannel(url).then(
                 function (value) {
-                    //console.log('Contents: ' + value);
                     return value
                 }
-            )
-    },
-    showFeed: function(url,ind){
-        return showChannel(url).then(function(feeds){
-            //console.log('h',feeds)
-                
-            let f = feeds[ind];
-            //console.log('h',f)
-            return f
-                        })
+            ).catch(function (err) {
+                $('#messageModal').modal('show')
+                document.getElementById("message").innerHTML = "Error: " + err.message})
+                    
     }
 }
 

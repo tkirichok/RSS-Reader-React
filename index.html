@@ -15,42 +15,27 @@
 </head>
 
 <body>
-    <header class="page-header navbar-fixed-top" >
-        <div class="row row-header">
-            <h1><span><i class="fa fa-rss"></i>
-</span>RSS Reader<small></small></h1>
-        </div>
-    </header>
 
-    <div class="container" id = "app">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="navbar-header">
+        </div>
+        <div id="navbar">
+
+        </div>
+
+    </nav>
+
+
+    <canvas class="spinn">браузер не поддерживает html5 элемент canvas.</canvas>
+    <div class="container" id="app">
 
     </div>
 
-    <footer class="row-footer">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-xs-12">
-                    <div class="nav navbar-nav" style="padding: 40px 10px;">
-                        <a class="btn btn-social-icon btn-google-plus" href="http://google.com/+"><i class="fa fa-google-plus"></i></a>
-                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>
-                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>
-                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
-                        <a class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
-                        <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/moment/min/moment.min.js"></script>
-    <!--<script src="http://sdepold.github.io/jquery-rss/src/jquery.rss.js"></script>-->
-    <script src="https://storage.googleapis.com/feednami-static/js/feednami-client-v1.0.1.js"></script>
-    <script src="https://cdn.rawgit.com/jprichardson/string.js/master/dist/string.min.js"></script>
-    <script src="bower_components/Chart.js/Chart.min.js"></script>
 
+    <script src="https://storage.googleapis.com/feednami-static/js/feednami-client-v1.0.1.js"></script>
 
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="bower_components/handlebars/handlebars.js"></script>
@@ -64,11 +49,7 @@
         });
     </script>
 
-    <script>
-        $(document).ready(function () {
-            $('[data-toggle="tooltip"]').tooltip();
-        })
-    </script>
-     </body>
+
+</body>
 
 </html>
